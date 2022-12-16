@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="MY First LWC">
+    <template if:true={isValid}>
+        <b>It's working now</b>
+    </template>
+    <p>{message}</p>
+
+    <template for:each={arrayIterate} for:item="aI">
+        <template for:each={aI} for:item="a">
+            <!--lightning-input key={a} type="text" label={a} onchange={onchange}></lightning-input-->        <!--p key={a}>{a}</p-->
+        </template>
+    </template>{contacts.length}
+    <template for:each={contacts} for:item="aI">
+        <p key={aI.Id}>{aI.Name}</p>
+        </template>
+    <lightning-button label="On chnage" onclick={onchange}></lightning-button>
+</lightning-card>
+</template>

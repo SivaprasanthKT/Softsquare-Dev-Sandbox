@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Hello" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+             <h1>HI Siva Prasanth</h1>
+        </div>
+        <lightning-record-edit-form record-id={recordId} object-api-name="Account" onsuccess={handleSuccess} onsubmit ={handleSubmit} >
+        <lightning-messages>
+        </lightning-messages>
+        <lightning-output-field field-name="Id">
+        </lightning-output-field>
+        <div style="width:50%;"><lightning-input-field field-name="Name"></lightning-input-field></div> 
+        <lightning-button class="slds-m-top_small" variant="brand" type="submit" name="update" label="Update">
+        </lightning-button>
+    </lightning-record-edit-form>
+
+    </lightning-card>
+    </template>
+</template>
