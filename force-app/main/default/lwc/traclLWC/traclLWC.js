@@ -2,8 +2,9 @@ import {
     LightningElement
 } from 'lwc';
 
-export default class TrackDecorator extends LightningElement {
-     message = 'World';
+export default class TrackDecoccccccccccrator extends LightningElement {
+    message = 'Worldxs';
+    x
 
     handleChange(event) {
         console.log('event.target.value' + event.target.value);
